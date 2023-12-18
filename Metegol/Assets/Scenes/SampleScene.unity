@@ -1196,7 +1196,7 @@ GameObject:
   - component: {fileID: 419347106}
   - component: {fileID: 419347108}
   m_Layer: 0
-  m_Name: Gol
+  m_Name: GolNewells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1250,10 +1250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32689310a12e5f4dac677dde997b8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anotador: {fileID: 492124820}
+  anotador: {fileID: 786028812}
   inicio: {fileID: 1776647990}
   panel: {fileID: 816806492}
-  win: 1
+  win: 4
 --- !u!1 &458323245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428, y: 194}
+  m_AnchoredPosition: {x: -299, y: 128.99997}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &492124820
@@ -3000,7 +3000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: 194}
+  m_AnchoredPosition: {x: -158, y: 128.99997}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786028812
@@ -3507,7 +3507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -6170,7 +6170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -427, y: 250}
+  m_AnchoredPosition: {x: -298, y: 185}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668450812
@@ -7422,7 +7422,7 @@ GameObject:
   - component: {fileID: 2058163334}
   - component: {fileID: 2058163336}
   m_Layer: 0
-  m_Name: Gol (1)
+  m_Name: GolCentral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7476,10 +7476,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32689310a12e5f4dac677dde997b8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anotador: {fileID: 786028812}
+  anotador: {fileID: 492124820}
   inicio: {fileID: 1776647990}
   panel: {fileID: 816806492}
-  win: 1
+  win: 3
 --- !u!1 &2077274411
 GameObject:
   m_ObjectHideFlags: 0
