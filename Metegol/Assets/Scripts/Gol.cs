@@ -1,18 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Gol : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public TextMeshProUGUI anotador;
+
+    int goles;
+
+    public Transform inicio;
+
+    public GameObject panel;
+
+    public int win;
+
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+   
+   
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Pelota"))
+        {
+            goles++;
+            anotador.text = goles.ToString();   
+
+            other.transform.position = inicio.position;
+
+            if(goles >= win) 
+            {
+            panel.SetActive(true);
+            }
+
+        }
     }
+
+    
+
 }

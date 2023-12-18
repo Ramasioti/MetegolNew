@@ -6,7 +6,8 @@ public class Seleccion : MonoBehaviour
 {
 
     public Movimiento[] palos;
-    
+
+    bool left, right;
 
 
     int palosSelecionado;
@@ -21,7 +22,7 @@ public class Seleccion : MonoBehaviour
     
     void Start()
     {
-        
+        right = left = true;
     }
 
    
@@ -41,11 +42,11 @@ public class Seleccion : MonoBehaviour
             palosSelecionado--;
         } 
        
-        if ( Input.GetKey(arriba))
+        if ( Input.GetKey(arriba) && right )
         {
             palos[palosSelecionado].movimiento(1);
         } 
-        if ( Input.GetKey(abajo))
+        if ( Input.GetKey(abajo) && left)
         {
             palos[palosSelecionado].movimiento(-1);
         }
@@ -56,5 +57,31 @@ public class Seleccion : MonoBehaviour
     }
 
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Left"))
+        {
+            left = false;
+
+        }
+        if (other.CompareTag("Right"))
+        {
+            right = false;
+            Debug.Log("anda");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Left"))
+        {
+            left = true;
+        }
+        if (other.CompareTag("Right"))
+        {
+            right = true;
+        } 
+    }
 
 }

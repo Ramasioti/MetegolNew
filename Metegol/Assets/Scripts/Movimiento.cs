@@ -12,6 +12,8 @@ public class Movimiento : MonoBehaviour
     public Animator animator;
 
     private Rigidbody rb;
+
+    public int equipo; 
     
     void Start()
     {
@@ -33,7 +35,7 @@ public class Movimiento : MonoBehaviour
     public void patear()
     {
         //animator.SetTrigger("patear"); 
-        rb.AddTorque(0,0,torque,ForceMode.Force);
+        rb.AddTorque(0,0,torque*equipo,ForceMode.Force);
     }
 
 
