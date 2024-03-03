@@ -33,6 +33,7 @@ public class Gol : MonoBehaviour
             anotador.text = goles.ToString();   
 
             other.transform.position = inicio.position;
+            other.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
             if(goles >= win) 
             {

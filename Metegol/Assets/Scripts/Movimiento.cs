@@ -34,9 +34,14 @@ public class Movimiento : MonoBehaviour
 
     public void patear()
     {
-        //animator.SetTrigger("patear"); 
-        rb.AddTorque(0,0,torque*equipo,ForceMode.Force);
+        animator.SetTrigger("patear"); 
+       
     }
 
+
+    public void Soltar()
+    {
+        rb.AddTorque(0, 0, torque * equipo, ForceMode.Force);
+    }
 
 }

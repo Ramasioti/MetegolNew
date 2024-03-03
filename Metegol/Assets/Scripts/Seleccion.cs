@@ -9,6 +9,8 @@ public class Seleccion : MonoBehaviour
 
     bool left, right;
 
+    public Material materialSelecionado;
+    public Material materialNoSelecionado;
 
     int palosSelecionado;
 
@@ -18,11 +20,12 @@ public class Seleccion : MonoBehaviour
     public KeyCode derecha;
     public KeyCode izquierda;
 
-
+    
     
     void Start()
     {
         right = left = true;
+        palosSelecionado = 2;
     }
 
    
@@ -35,11 +38,15 @@ public class Seleccion : MonoBehaviour
     {
         if (Input.GetKeyDown(derecha) && palosSelecionado!= palos.Length-1)
         {
+            ChangeColor(materialNoSelecionado);
             palosSelecionado++;
+            ChangeColor(materialSelecionado);
         } 
         if ( Input.GetKeyDown(izquierda) && palosSelecionado != 0)
         {
+            ChangeColor(materialNoSelecionado);
             palosSelecionado--;
+            ChangeColor(materialSelecionado);
         } 
        
         if ( Input.GetKey(arriba) && right )
@@ -56,6 +63,10 @@ public class Seleccion : MonoBehaviour
         }
     }
 
+    private void ChangeColor(Material material)
+    {
+        palos[palosSelecionado].GetComponent<MeshRenderer>().material = material;
+    }
 
 
     private void OnTriggerEnter(Collider other)
