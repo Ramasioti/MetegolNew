@@ -69,30 +69,6 @@ public class Seleccion : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Left"))
-        {
-            left = false;
-
-        }
-        if (other.CompareTag("Right"))
-        {
-            right = false;
-            Debug.Log("anda");
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Left"))
-        {
-            left = true;
-        }
-        if (other.CompareTag("Right"))
-        {
-            right = true;
-        } 
-    }
+   
 
 }
