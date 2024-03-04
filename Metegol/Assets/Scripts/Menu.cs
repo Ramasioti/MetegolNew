@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
 
     public void Jugar()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()

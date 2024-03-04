@@ -7,12 +7,12 @@ public class Revancha : MonoBehaviour
 {
     public void revancha()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void inicio()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
  

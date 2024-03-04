@@ -46,7 +46,7 @@ public class Gol : MonoBehaviour
 
     public void VolverIniciar()
     {
-        pelota.transform.position = inicio.position;
+       pelota.transform.position = inicio.position;
        pelota.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
     
